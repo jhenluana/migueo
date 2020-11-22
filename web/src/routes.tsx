@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
-import  Landing from './pages/Landing';
 import  Cardapio from './pages/Cardapio';
+import inicio from './pages/inicio';
+import  Peixes from './pages/Peixes';
+import Produtolistar from "./components/Produtolistar";
 //"view/Cardapio/index.tsx"
 // import App from "./App.js"
 // import LandingPage from "./view/LandingPage";
@@ -17,8 +19,9 @@ function Routes(){
     return (
         <BrowserRouter>
             <Switch>
-                 <Route path="/" exact component={Landing} />
+                 <Route path="/" exact component={inicio}/>
                  <Route path="/app" component={Cardapio} />
+                 <Route path="/produto/listar" exact component={Produtolistar} />
                  {/* <Route path="/cardapio/:id_mes" exact component={Cardapio} /> */} 
                  {/* <Route path="/cozinha/listar" exact component={CozinhaListar} /> */}
                  {/* <Route path="/cozinha/concluir" exact component={CozinhaConcluir} /> */}
