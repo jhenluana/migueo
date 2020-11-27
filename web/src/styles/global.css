@@ -5,11 +5,15 @@ box-sizing: border-box;
 }
 
 body{
- color: #FFF;
- background: #ebf2f5;
+ color: #000000;
+ background: #e90707;
 
 }
 body, input, button, textarea{
-    font: 600 18px Nunito, sans-serif;
+    font: 500 17px Poppins, normal;
+    color: #000000;
+    background-color:rgba(0, 0, 0, 0.04);
+    background: rgba(0, 0, 0, 0.04);
+
 
 }
